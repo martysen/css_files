@@ -4,10 +4,14 @@ body{
     
 }
 
+/* header{
+    transform: rotate(30deg);
+} */
+
 h1, h2, h3{
     color: brown;
     background-color: cornsilk;
-    text-align: center;
+    text-align: center;    
 }
 
 div{
@@ -39,5 +43,17 @@ div:hover{
     margin: 1%;
     padding: 2px;
     border-radius: 5px;
+}
 
+div:focus{
+    color: tomato;
+    font-size: 50px;
+    background-color:whitesmoke;
+    width: 75%;
+    height: 50%;
+    border: 25px;
+    border-style: hidden;
+    margin: 1%;
+    padding: 2px;
+    border-radius: 5px;
 }
