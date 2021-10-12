@@ -11,7 +11,8 @@ body{
 h1, h2, h3{
     color: brown;
     background-color: cornsilk;
-    text-align: center;    
+    text-align: center;   
+    clear: both; 
 }
 
 div{
@@ -57,3 +58,43 @@ div:focus{
     padding: 2px;
     border-radius: 5px;
 }
+
+/* styling the nav bar */
+.nav_bar{
+    /* browser takes care of height width border etc */
+    box-sizing: border-box;
+    /* block has to be inline-block if you want vertical menu */
+    display: block;
+    /* position: relative; */
+    /* border: 2px solid lightskyblue; */
+    background-color: cornsilk;
+    margin: 2px;
+    padding: 1px;
+    /* height is an important property for vertical menu */
+    /* height: 100vh; */ /*here vh stands for viewport height. i.e. based on the device it will take the entire screen height*/
+}
+
+.nav_bar a{
+    /* changing display width and height can allow to switch between vertical and horizontal bars */
+    display: inline-block;
+    width: auto;
+    height: 20px;
+    position: static;
+    /* margin padding and border will allow you to control the spacing between the menus */
+    margin: 5px;
+    padding: 1px;
+    border: 1px solid;
+    border-radius: 5px;
+    /* overflow is useful more for vertical menu bars */
+    overflow: auto;
+    text-transform: uppercase;
+    text-decoration: blueviolet;
+
+}
+
+.active{
+    background-color: rgb(216, 210, 196);
+}
+
+/* try yourself -- add pseudo class elements like hover and focus */
+/* Try yourself -- research and createa drop down nav bar */
