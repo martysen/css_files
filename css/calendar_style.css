@@ -1,0 +1,81 @@
+/* style sheet for html file in ../html/calendar.html */
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    text-align: center;
+    font-style: oblique;
+}
+
+/* div container for calender  */
+.calendar_container{
+    /* position property */
+    position: relative;
+    /* position offset top and left */
+    top: 75%;
+    left: 10%;
+    /* box model properties */
+    border: 20px;
+    margin: 20px;
+    padding: 5px;
+}
+
+/* basic style rules for the table */
+#calendar_table{
+    /* text color and background color */
+    color: rgb(12, 9, 2);
+    background-color: rgb(253, 247, 247);
+    /* separation between coloumns */
+    border-spacing: 2px;
+    /* making table borders */
+    border: 2px solid black;
+    /* table width */
+    width: 50%;
+    
+}
+/* apply alternate colors to tr elements using pseudo elements */
+tr:nth-child(odd){
+    background-color: rgb(224, 215, 131);
+
+}
+tr:nth-child(even){
+    background-color: rgb(253, 247, 247);
+
+}
+/* remove color from table header and make it similar to table background */
+th{
+    background-color: rgb(253, 247, 247) !important;
+}
+/* curve the corners of the calender row last child  */
+tr:last-child{
+    -moz-border-radius: 0px 0px 30px 30px;
+    -webkit-border-radius: 0px 0px 30px 30px;
+    border-radius: 0px 0px 30px 30px;
+}
+/* select last row's first cell and curve the left side of the border */
+tr:last-child>td:first-child{
+    -moz-border-radius: 0 0 0 30px;
+    -webkit-border-radius: 0 0 0 30px;
+    border-radius: 0 0 0 30px;
+
+}
+/* select last row's last cell and curve the bottom side of the border */
+tr:last-child>td:last-child{
+    -moz-border-radius: 0 0 30px 0;
+    -webkit-border-radius: 0 0 30px 0;
+    border-radius: 0 0 30px 0;
+}
+
+/* give some style to the caption */
+#calendar_table caption {
+    background-color: rgb(226, 108, 108);
+    color: maroon;
+    font-weight: bold;
+    font-size: 125%;
+    border-radius: 25px 25px 0 0;
+    text-transform: uppercase;
+    border: 2px solid black;
+
+}
